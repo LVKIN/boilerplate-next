@@ -1,0 +1,21 @@
+import * as S from "./styled";
+
+const Main = ({
+  title = "React Avançado - Boilerplate",
+  description = "TypeScript, ReactJS, NextJS e Styled Components"
+}) => (
+  <S.Wrapper>
+    <S.Logo
+      src="/img/logo.svg"
+      alt="imagem de átomo com React Avançado escrito ao lado."
+    />
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
+    <S.Illustration
+      src="/img/hero-illustration.svg"
+      alt="ilustração de uma pessoa sentada numa cadeira enfrente a um computador"
+    />
+  </S.Wrapper>
+);
+
+export default Main;
