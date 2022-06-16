@@ -7,8 +7,10 @@ const nextConfig = {
   reactStrictMode: true
 };
 
-module.exports = nextConfig;
-module.exports = withPWA({
-  pwa: "public",
-  disable: !isProd
-});
+module.exports = [
+  nextConfig,
+  withPWA({
+    pwa: "public",
+    disable: !isProd
+  })
+];
